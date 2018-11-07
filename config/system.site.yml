@@ -1,0 +1,14 @@
+uuid: 4c830ebb-215a-45da-abe6-3d0c3bad4ddb
+name: ficker-d8-megasite
+mail: daniel.ficker@getpantheon.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
