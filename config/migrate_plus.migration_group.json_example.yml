@@ -1,0 +1,12 @@
+uuid: d82e72f6-8ccd-4a8a-bdc0-0d42a14ec3fd
+langcode: en
+status: true
+dependencies: {  }
+id: json_example
+label: 'JSON Example'
+description: ''
+source_type: ''
+module: null
+shared_configuration:
+  source:
+    urls: 'http://www.omdbapi.com/?s=space&type=movie&r=json&apikey=86e4b169'
