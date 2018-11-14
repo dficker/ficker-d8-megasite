@@ -1,0 +1,23 @@
+uuid: 4b727b0e-8f4c-415e-bb2f-1ae203ef30c7
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api_pantheon
+    - search_api_solr
+id: pantheon
+name: Pantheon
+description: ''
+backend: search_api_solr
+backend_config:
+  connector: pantheon
+  connector_config:
+    schema: modules/contrib/search_api_solr/solr-conf/4.x/schema.xml
+  retrieve_data: false
+  highlight_data: false
+  excerpt: true
+  skip_schema_check: false
+  site_hash: false
+  suggest_suffix: true
+  suggest_corrections: true
+  suggest_words: false
