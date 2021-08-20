@@ -74,23 +74,11 @@ datasource_settings:
       default: true
       selected: {  }
 processor_settings:
-  add_url: {  }
-  aggregated_field: {  }
-  content_access:
-    weights:
-      preprocess_query: -30
-  entity_status: {  }
-  highlight:
-    highlight: always
-    highlight_partial: false
-    excerpt: true
-    excerpt_length: 256
-    exclude_fields: {  }
-    prefix: '<strong>'
-    suffix: '</strong>'
-    weights:
-      postprocess_query: 0
+  language_with_fallback: {  }
   rendered_item: {  }
+  add_url: {  }
+  entity_status: {  }
+  aggregated_field: {  }
   tokenizer:
     all_fields: false
     fields:
@@ -102,6 +90,19 @@ processor_settings:
     weights:
       preprocess_index: -6
       preprocess_query: -6
+  highlight:
+    highlight: always
+    highlight_partial: false
+    excerpt: true
+    excerpt_length: 256
+    exclude_fields: {  }
+    prefix: '<strong>'
+    suffix: '</strong>'
+    weights:
+      postprocess_query: 0
+  content_access:
+    weights:
+      preprocess_query: -30
 tracker_settings:
   default:
     indexing_order: fifo
