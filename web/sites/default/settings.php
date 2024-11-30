@@ -84,3 +84,13 @@ if (defined('PANTHEON_ENVIRONMENT')) {
   $settings['cache']['bins']['form']      = 'cache.backend.database';
 }
 
+// Pantheon specific settings.
+if (!empty($_ENV['PANTHEON_ENVIRONMENT'])) {
+
+  // Load monolog config.
+  $monolog_services = __DIR__ . '/monolog.services.yml';
+  if (file_exists($monolog_services)) {
+    $settings['container_yamls'][] = $monolog_services;
+  }
+  
+}
